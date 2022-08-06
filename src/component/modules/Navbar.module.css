@@ -1,0 +1,28 @@
+.navbar{
+}
+.wrapper{
+    border: 0 !important;
+}
+.navbar_link{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    color: black !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-weight: 500;
+}
+
+.brand{
+    border: 0 !important;
+    font-weight: 500;
+}
+.brand,.brand:focus, .brand:active,.brand:hover {
+    border: 0;
+}
+
+.user_link{
+    justify-content: flex-end;
+}

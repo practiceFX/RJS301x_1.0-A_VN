@@ -1,0 +1,76 @@
+.product_common, 
+.product_descrption,
+.product_related{
+    padding: 50px 100px;
+}
+.btn_image{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+.btn_image:hover{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+.btn_image:focus{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none !important;
+} 
+.btn_image:active{
+    box-shadow: none;
+}
+
+/* product pamas */
+.title_pamas{
+    margin: 12px 0 !important;
+}
+.price{
+    margin: 48px 0 !important;
+}
+.short_des{
+    padding-right: 10vw;
+}
+.category{
+    margin: 32px 0 !important;
+}
+.count_area{
+    display: flex;
+}
+.count_area >input {
+    width: 20%;
+    border-radius: 0;
+    border-right: 0;
+    background-color:transparent !important;
+}
+.count_area>span{
+    border-left: 0;
+    border-radius: 0;
+}
+.count_area >span >button{
+   background-color: transparent;
+   padding: 0;
+}
+.count_area >span >button:hover{
+    background-color: transparent;
+ }
+ .count_area >span >input{
+    background-color: transparent;
+    width: 35px !important;
+ }
+ .count_area >button{
+    border-radius: 0;
+    background-color: #353535;
+ }
+
+
+ /* description  */
+ .long_des_btn{
+    margin: 24px 0;
+    padding: 12px 24px;
+    border-radius: 0;
+    background-color: #353535 !important;
+ }
+ .title_des{
+    margin: 16px 0 32px 0 ;
+ }

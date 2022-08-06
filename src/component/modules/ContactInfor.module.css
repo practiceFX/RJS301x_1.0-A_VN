@@ -1,0 +1,19 @@
+.card_infor{
+    margin: 108px 0 !important;
+}
+.search_box{
+    margin: 160px 0 !important;
+}
+.search_area{
+    display: flex;
+    padding-right: 100px;
+}
+.search_area >input{
+    border-radius: 0;
+    padding: 24px 16px;
+}
+.search_area >button{
+    border-radius: 0;
+    width: 200px;
+    
+}

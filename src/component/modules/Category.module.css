@@ -1,0 +1,28 @@
+.category_wrapper{
+
+}
+.card_categories{
+    padding-bottom: 60px;
+    border-radius: 0 !important;
+    border: 0 !important;
+    color: black;
+}
+.card_categories:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.card_categories>img{
+    z-index: 10;
+    max-height: 450px;
+    min-height: 400px;
+}
+.card_overlay{
+    background-color: #f7f5f8;
+  
+}
+.name_categories{
+    position: absolute;
+    bottom: 0;
+    left: 50% ;
+    transform: translateX(-50%)
+}

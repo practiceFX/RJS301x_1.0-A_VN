@@ -1,0 +1,85 @@
+.title{
+    margin: 32px 0 !important;
+ }
+ .cart{
+    padding-inline: 50px;
+    margin: 50px 0 100px 0 !important;
+ }
+
+
+.count_area >input{
+    border-radius: 0 !important;
+    padding: 16px;
+   
+  
+}
+.count_area>span{
+    border: 0;
+}
+.count_area >span >button{
+   background-color: transparent;
+   padding: 0;
+}
+.count_area >span >button:hover{
+    background-color: transparent;
+ }
+.count_area >span >input{
+    background-color: transparent;
+    /* width: 35px !important; */
+    font-size: 18px;
+ }
+ .count_area >button{
+    border-radius: 0;
+    background-color: #353535;
+ }
+
+
+ 
+ /* table product */
+ .img_product{
+    width: 100px !important;
+    height: auto;
+    max-height: 100px;
+ }
+ .table thead tr> th,.table tbody tr> th {
+    text-align: center;
+ }
+ .table tbody tr> th{
+    line-height: 100px;
+ }
+ .cart_total_title{
+    margin: 16px 0;
+ }
+ .cart_total_subtotal, .cart_total_total{
+    display: flex;
+    margin: 24px 0;
+ }
+ .cart_total_subtotal>span, .cart_total_total>span{
+    margin: 0 0 0 auto;
+ }
+.button_applyCoupon{
+    width: 100%;
+    padding: 8px 0 !important;
+    border-radius: 0 !important;
+    background-color: #353535 !important;
+}
+.btn_checkout, .btn_shopping{
+    background-color: transparent !important;
+    color: black !important;
+    padding: 8px 16px;
+    border-radius: 0 !important;
+    text-decoration: none;
+}
+
+.btn_shopping{
+   border: 0 !important;
+}
+.btn_delete{
+   background-color: transparent !important;
+   color: black !important;
+   border: 0 !important;
+}
+.btn_checkout:hover, .btn_delete:hover{
+    background-color: transparent !important;
+    color: black !important;
+}

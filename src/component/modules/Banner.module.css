@@ -1,0 +1,50 @@
+
+/*Banner Image*/
+.banner{
+    height: fit-content;
+    width: 100vw;
+    background-color:#f4f5f9;
+}
+.inner_banner{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 150%;
+    padding: 10vw 0 12vw 5vw;
+    
+}
+/* end */
+
+
+
+/* Text */
+
+.text_title{
+    font-weight: 450;
+}
+.text_child{
+    color: #3221197a;
+    font-weight: 300;
+}
+/* End */
+
+
+
+/*
+Button
+*/
+.button_banner{
+    margin: 12px 0;
+}
+
+.button_banner{
+    border-radius: 0;
+    width: fit-content;
+    font-size: 18px;
+    margin-top: 32px;
+    padding: 8px 28px;
+    background-color: #383838;
+    color: rgba(255, 255, 255, 0.759);
+}
+.link{
+    text-decoration: none;
+}
