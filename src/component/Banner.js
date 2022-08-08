@@ -12,7 +12,6 @@ const Banner = () => {
                     <CardBody className={styles.text_banner} >
                         <CardTitle className={`${styles.text_child} h6 my-3`}>NEW INSPIRATION 2022</CardTitle>
                         <CardTitle className={`${styles.text_title} h1 my-3`}>20% OFF ON NEW <br></br>SEASON</CardTitle>
-
                         <Link to='/shop' className={styles.link}>
                             <div className={styles.button_banner}>
                                 Browse collections

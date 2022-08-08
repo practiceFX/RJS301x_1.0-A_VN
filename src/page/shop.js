@@ -9,6 +9,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { getAllData } from '../store/api';
 import BannerPage from '../component/BannerPage';
 
+
+
+
+
+
 const Shop = () => {
     const dispatch = useDispatch();
     // get data from API
@@ -41,6 +46,7 @@ const Shop = () => {
     // end
 
 
+
     React.useEffect(() => {
         if (dataDetailProduct.length == 0) {
             dispatch(getAllData());
@@ -49,13 +55,16 @@ const Shop = () => {
         }
         getDataCategories();
         handleUrl();
-    }, [location, handleUrl])
+    }, [location])
     return (
         <React.Fragment>
             <BannerPage title='SHOP' />
             <Row className={styles.AllProduct}>
                 <SideBar onClick />
-                <ListProduct dataCategories={dataCategories} link={true} />
+                <ListProduct
+                    memo={true}
+                    dataCategories={dataCategories}
+                />
             </Row>
         </React.Fragment >
     );

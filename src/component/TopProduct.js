@@ -42,12 +42,11 @@ const TopProduct = () => {
             dispatch(getAllData());
         }
         handleClickOutside();
-    })
+    }, [])
 
 
     return (
         <React.Fragment>
-
 
             {/* The list Product */}
             <Row>
@@ -59,14 +58,16 @@ const TopProduct = () => {
                 </Col>
                 {
                     dataProduct.length == 0 ? null : dataProduct.map((item, index) => (
-                        <Col xs="3">
-                            <CardProducts id={item._id['$oid']}
+                        <Col xs="3" key={index}>
+                            <CardProducts
+                                id={item._id['$oid']}
                                 category={item.category}
                                 img1={item.img1}
                                 name={item.name}
                                 price={item.price}
                                 link={false}
                                 onClick={() => handleClick(index)}
+                                memo={true}
                             />
                         </Col >
                     ))
@@ -86,7 +87,6 @@ const TopProduct = () => {
                 active={activePopup}
             />
             {/* end */}
-
 
 
         </React.Fragment>

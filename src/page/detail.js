@@ -11,7 +11,7 @@ import { handleOrderCartAction } from '../store/actionHandleCart';
 let stringToFormatPrice = Intl.NumberFormat('en-US');
 
 
-const Detail = () => {
+const Detail = React.memo(() => {
     const dispatch = useDispatch();
 
     const dataProduct = useSelector(state => state.httpData.data);    // get data from API
@@ -170,12 +170,14 @@ const Detail = () => {
                 {
                     dataRelated != '' ? dataRelated.map((item, index) => (
                         <Col xs="2">
-                            <CardProducts key={index}
+                            <CardProducts
+                                key={index}
                                 id={item._id['$oid']}
                                 category={item.category}
                                 img1={item.img1}
                                 name={item.name}
                                 price={item.price}
+                                memo={true}
                             />
                         </Col>
                     )) : null
@@ -183,6 +185,6 @@ const Detail = () => {
             </Row>
         </React.Fragment >
     );
-}
+})
 
 export default Detail;

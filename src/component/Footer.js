@@ -24,7 +24,6 @@ const Footer = () => {
             </Col>
             <Col xs="4" className={styles.list}>
                 <CardTitle className="h3">SOCIAL MEDIA</CardTitle>
-
                 <CardTitle>Twitter</CardTitle>
                 <CardTitle>Instagram</CardTitle>
                 <CardTitle>Facebook</CardTitle>

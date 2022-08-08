@@ -4,7 +4,8 @@ import { Card, CardImg, CardTitle, Button } from 'reactstrap'
 import { Link } from 'react-router-dom';
 
 let stringToFormatPrice = Intl.NumberFormat('en-US');
-const CardProducts = props => {
+const CardProducts = React.memo(props => {
+    // console.log('reder..');
     return (
         <Card className={styles.card_product}>
             {
@@ -15,6 +16,7 @@ const CardProducts = props => {
                         <CardTitle className={`${props.size == '' ? 'h4' : 'h6'} ${styles.title}`}><strong>{props.name}</strong></CardTitle>
                         <CardTitle className={`h6 ${styles.price}`}>{stringToFormatPrice.format(props.price)} VND</CardTitle>
                     </Button>
+
                     // end
                 ) : (
                     // in shop page
@@ -29,7 +31,7 @@ const CardProducts = props => {
 
         </Card >
     );
-}
+})
 
 export default CardProducts;
 

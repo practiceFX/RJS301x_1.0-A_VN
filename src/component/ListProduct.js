@@ -4,6 +4,7 @@ import { Col, Input, Row } from 'reactstrap';
 import CardProducts from './CardProducts';
 
 
+
 const ListProduct = props => {
     return (
         <Col xs="12" lg="9" className={styles.products}>
@@ -31,6 +32,7 @@ const ListProduct = props => {
                                 price={item.price}
                                 size='true'
                                 link={true}
+                                memo={true}
                             />
                         </Col>
                     )) : null

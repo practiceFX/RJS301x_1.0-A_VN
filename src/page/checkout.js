@@ -58,8 +58,10 @@ const Checkout = () => {
                     </CardTitle>
 
                     {
-                        dataOrder.map((item) => (
-                            <CardBody className={`${styles.cart_total_subtotal}`}>
+                        dataOrder.map((item, index) => (
+                            <CardBody
+                                key={index}
+                                className={`${styles.cart_total_subtotal}`}>
                                 <strong>{item.name}</strong>
                                 <span className=''>{stringToFormatPrice.format(item.price)} VND X {item.amount}</span>
                             </CardBody>

@@ -135,7 +135,7 @@ const Cart = () => {
                                         <th>
                                             <CardTitle>
                                                 <Button className={styles.btn_delete} onClick={() => handleDelete(index)}>
-                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    <i className="fa fa-trash" aria-hidden="true"></i>
                                                 </Button>
                                             </CardTitle>
                                         </th>
@@ -167,21 +167,21 @@ const Cart = () => {
                     </CardTitle>
                     <CardTitle>
                         <Button className={styles.button_applyCoupon}>
-                            <i class="fa fa-gift" aria-hidden="true"></i>&nbsp;
+                            <i className="fa fa-gift" aria-hidden="true"></i>&nbsp;
                             Apply coupon
                         </Button>
                     </CardTitle>
                 </Col>
                 <Col xs="6" className='mt-5'>
                     <Link className={styles.btn_shopping} to="/shop">
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
+                        <i className="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
                         <span className='h5 pl-5'>Continute shopping</span>
                     </Link>
                 </Col>
                 <Col xs="6" className='mt-5'>
                     <Button className={styles.btn_checkout} onClick={handleCheckout}>
                         <span className='h6 pl-5'>Proceed to checkout</span>&nbsp;&nbsp;
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <i className="fa fa-arrow-right" aria-hidden="true"></i>
                     </Button>
                 </Col>
             </Row>

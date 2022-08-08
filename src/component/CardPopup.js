@@ -20,7 +20,7 @@ const CardPopup = props => {
                         <CardText className={styles.shortDesc}>{props.short_des}</CardText>
                         <Link to={`/detail/apple?id=${props.id}&category=${props.category}`} className={styles.link}>
                             <Button className={styles.btn_viewDetail}>
-                                <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;
+                                <i className="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;
                                 <span>View Detail</span>
                             </Button>
                         </Link>

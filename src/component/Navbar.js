@@ -83,7 +83,7 @@ const Navbar = () => {
                                     <Link to='/user' className={styles.link}>
                                         <i className="fa fa-user" aria-hidden="true"></i>&nbsp;
                                         <span>{user}</span>&nbsp;
-                                        <i class="fa-solid fa-angle-down"></i>
+                                        <i className="fa-solid fa-angle-down"></i>
                                     </Link>
                                 </CardTitle>
                             </ListGroupItem>
