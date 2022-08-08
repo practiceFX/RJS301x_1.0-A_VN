@@ -35,9 +35,12 @@ const Cart = () => {
     // order total cost
     const totalOrder = () => {
         let sum = 0;
-        dataOrder.map((item) => {
+        console.log(dataUserOrder);
+
+        dataUserOrder != '' ? (dataUserOrder.map((item) => {
             sum = sum + parseInt(item.price) * parseInt(item.amount)
-        })
+        })) : sum = 0
+
         return sum;
     }
     // end

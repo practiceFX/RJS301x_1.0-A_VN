@@ -2,14 +2,15 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     users: [
-        //fullname
-        // nameUser: '',
-        // passUser: ''
-        //phone
-
+        {
+            fullname: 'John',
+            nameUser: 'John',
+            passUser: 'John123',
+            phone: '12121'
+        }
     ],
     onLogin: [
-        // { user: '' }
+        { user: '' }
     ]
 
 }

@@ -12,8 +12,6 @@ import BannerPage from '../component/BannerPage';
 
 
 
-
-
 const Shop = () => {
     const dispatch = useDispatch();
     // get data from API

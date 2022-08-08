@@ -9,7 +9,7 @@ const Home = () => {
         <React.Fragment>
             <Banner />
             <Category />
-            <TopProduct memo={true} />
+            <TopProduct />
             <ContactInfor />
         </React.Fragment>
     );

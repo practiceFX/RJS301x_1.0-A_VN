@@ -41,7 +41,7 @@ const Register = () => {
 
     // check user have exist in list 
     const checkUserData = () => {
-        dataUser.filter((item) => {
+        const dataUserCheck = dataUser.filter((item) => {
             if (
                 item.fullName == fullname &&
                 item.nameUser == email &&
@@ -51,10 +51,10 @@ const Register = () => {
                 return true
             }
         })
-        if (dataUser.length > 0) {
-            return true;
-        } else {
+        if (dataUserCheck.length > 0) {
             return false;
+        } else {
+            return true;
         }
     }
     //end

@@ -24,13 +24,11 @@ const Login = () => {
             }
         })
         // end
-
         // Check user have exsit in the list user register
         if (dataCurrent.length > 0) {
             dispatch(handleUserAction.ON_LOGIN(dataCurrent[0]));
             navigation('/?confirm=true');
         } else {
-            console.log(email, password);
             alert('You have not register')
         }
         // end

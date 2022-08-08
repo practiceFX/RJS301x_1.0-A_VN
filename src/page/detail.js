@@ -15,6 +15,7 @@ const Detail = React.memo(() => {
     const dispatch = useDispatch();
 
     const dataProduct = useSelector(state => state.httpData.data);    // get data from API
+    const isLogIn = useSelector(state => state.dataUser.onLogin);
 
 
     const [amount, setamount] = React.useState('');
@@ -67,7 +68,7 @@ const Detail = React.memo(() => {
 
     // Order Product
     const handleOrderProduct = () => {
-        if (amount != 0) {
+        if (amount != 0 && isLogIn.length != 0) {
             let productAmount = {
                 id: dataDetail[0]._id['$oid'],
                 name: dataDetail[0].name,
@@ -82,7 +83,10 @@ const Detail = React.memo(() => {
             dispatch(handleOrderCartAction.ADD_CART(productAmount));
             alert('Order Success');
 
-        } else {
+        } else if (isLogIn == 0) {
+            alert('Please Log in')
+        }
+        else {
             alert('Invalid order')
         }
     }
